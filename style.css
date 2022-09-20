@@ -1,0 +1,156 @@
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(14, 12, 12);
+    background-color:#f7858b;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+ul{
+display:flex;
+justify-content:space-between;
+list-style-type:none;
+align-items:stretch;
+padding:16px;
+}
+
+img{
+    width:150px;
+    height:300px;
+    border-radius:50%;
+    border:5px solid red;
+}
+
+a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(10, 10, 10);
+    text-decoration:none;
+    position: relative;
+}
+
+a::after{
+content:"";
+width:0%;
+height:2px;
+background-color: #000000;
+position: absolute;
+bottom:0;
+left:0;
+transition:0.5s ease-in-out;
+}
+
+a:hover::after{
+width:100%;
+}
+
+ #topo:hover{    
+    
+    color:rgb(250, 15, 27);
+    transition:1s;
+ }
+
+.center{
+    text-align:center;
+}
+
+h1{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+    color:rgb(10, 10, 10);
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif ;
+    color:rgb(151, 12, 12);
+    font-size: 35px;
+    text-align:center;
+}
+
+*{
+   box-sizing:border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body2{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    background:linear-gradient(to bottom,rgb(255,240,240) 60%,#b43333 40%)
+}
+form{
+    width:300px;
+    border-radius:3px;
+    background-color: #fff;
+    padding:22px;
+}
+form h4{
+font-size:37px;
+color:#b43333;
+margin-bottom:20px;
+}
+form.area-input{
+    display:block;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    position:absolute; 
+    height:35px;
+    margin-top:20px;
+}
+form.area-input label{    
+    position:absolute;
+    top:0;
+    left:10px;
+    font-size:12px;
+    color:#b43333;
+    transform:translateY(-70%);
+}z
+form.area-input input{
+    width:100%;
+    height:100%;
+    border: none;
+    border-radius:2px;
+    border-bottom:2px solid #b43333;
+    color: #b43333;
+    outline:none;
+}
+
+form.area-input textarea{
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:2px;
+    border-bottom:2px solid #b43333;
+    margin-bottom:50px;
+    resize:none;
+    outline:none;
+}
+form button{
+    margin-top:20px;
+    width:100%;
+    height:35px;
+    background-color: #b43333;
+    color:#fff;
+    border:none;
+    transition: 0.3s;
+    cursor:pointer;
+}
+form button:hover{
+    filter:brightness(0.9s)
+}
+@media(max-width:600px){
+    body{
+        background-color:#f080d4;
+    }
+    }
+    
+    
+
